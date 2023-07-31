@@ -1,0 +1,48 @@
+:root {
+    --pantone-burnt-orange: #FF7F49;
+    --pantone-sea-green: #9FE2BF;
+    --pantone-midnight-blue: #1A4876;
+    --pantone-pink-flamingo: #FC74FD;
+    --pantone-violet-red: #F75394;
+    --pantone-white: #EDEDED;
+    --pantone-silver: #CDC5C2;
+    --pantone-black: #232323;
+}
+    
+.pantone-burnt-orange {
+    color: var(--pantone-black);
+    background-color: var(--pantone-burnt-orange);
+}
+
+.pantone-sea-green {
+    color: var(--pantone-black);
+    background-color: var(--pantone-sea-green);
+}
+
+.pantone-midnight-blue {
+    color: var(--pantone-white);
+    background-color: var(--pantone-midnight-blue);
+}
+
+.pantone-pink-flamingo {
+    color: var(--pantone-black);
+    background-color: var(--pantone-pink-flamingo);
+}
+
+.pantone-violet-red {
+    color: var(--pantone-black);
+    background-color: var(--pantone-violet-red);
+}
+
+.pantone-silver {
+    color: var(--pantone-black);
+    background-color: var(--pantone-silver);
+}
+
+.swatch__item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px;
+}
+    
