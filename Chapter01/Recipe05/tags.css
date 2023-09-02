@@ -1,0 +1,32 @@
+:root {
+    --color-tag-bg: green;
+    --color-tag-bg-visited: gray;
+    --color-light: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px;
+    color: var(--color-light);
+    text-decoration: none;
+    background: var(--color-tag-bg);
+    border-radius: 6px;
+    border: outset 2px var(--color-tag-bg);
+}
+
+.tag:hover {
+    filter: brightness(1.5);
+}
+
+.tag:active {
+    filter: brightness(0.5);
+}
+
+.tag:visited {
+    background-color: var(--color-tag-bg-visited);
+    border-color: var(--color-tag-bg-visited);
+}
