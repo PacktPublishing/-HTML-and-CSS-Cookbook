@@ -1,0 +1,81 @@
+:root {
+    --color-article-bg: #FF9B50;
+    --color-aside-bg: #C63D2F;
+    --color-nav-bg: #219C90;
+    --color-text: #FFF;
+    --width-sidebar: 200px;
+    --max-container-width: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: var(--color-nav-bg);
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    min-height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--color-bg);
+}
+
+article, aside, nav {
+    width: 100%;
+    padding: 20px;
+}
+
+article {
+    background: var(--color-article-bg);
+}
+
+aside {
+    background: var(--color-aside-bg);
+}
+
+/* Calc with width subtraction of fixed width */
+.container--fixedsidebar aside {
+    width: var(--width-sidebar);
+}
+.container--fixedsidebar article {
+    width: calc(100% - var(--width-sidebar));
+}
+
+/* Calc with height subtraction of fixed width */
+nav {
+    height: 60px;
+}
+main {
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+
+/* Calc with division and multiplication */
+.container--maxwidth {
+    flex-direction: row-reverse;
+}
+.container--maxwidth aside {
+    width: calc(var(--max-container-width) / 4);
+}
+.container--maxwidth article {
+    width: calc(var(--max-container-width) / 4 * 3);
+}
+
+/* Calc unit conversion / responsive font size */
+.container, nav {
+    font-size: calc(10px + 1vw);
+}
